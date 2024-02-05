@@ -49,8 +49,13 @@ function displayInventionDetailsCard(htmlTarget, invention) {
 */
 function displayAllInventions() {
     // Get target element from the DOM to display the inventions
+    const htmlTarget = document.getElementById('inventions_list');
     // Clear the list
-    // Create and Display Card for 3 inventions
+    htmlTarget.innerHTML = '';
+    // Create and Display Card for all inventions
+    for (let i = 0; i < inventions.length; i++) {
+        displayInventionDetailsCard(htmlTarget, inventions[i]);
+    }
 }
 
 /*
@@ -64,6 +69,10 @@ function displayInvention() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
     // Get the target element from the DOM
+    const htmlTitleTarget = document.getElementById('invention_title')
+    const htmlTarget = document.getElementById('invention_details');
     // Get the invention object from the array "inventions" using the id
+    
     // Display the details of the invention in the target element
+    
 }
