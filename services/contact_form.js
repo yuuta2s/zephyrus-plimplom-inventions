@@ -23,7 +23,7 @@ function handleFormSubmit(event) {
     //error
   } else {
     alert(
-      `Merci ${name} pour votre message! Nous vous contacterons bientôt sur l'adresse mail ${name}. !`
+      `Merci ${name} pour votre message! Nous vous contacterons bientôt sur l'adresse mail ${email}. !`
     );
   }
 }
