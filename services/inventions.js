@@ -51,15 +51,11 @@ function displayAllInventions() {
     // Get target element from the DOM to display the inventions
     const htmlTarget = document.getElementById('inventions_list');
     // Clear the list
-<<<<<<< HEAD
-    // Create and Display Card 
-=======
     htmlTarget.innerHTML = '';
     // Create and Display Card for all inventions
     for (let i = 0; i < inventions.length; i++) {
         displayInventionDetailsCard(htmlTarget, inventions[i]);
     }
->>>>>>> c79688b51c65a4cd52a6478806566a41fd0f3dde
 }
 
 /*
