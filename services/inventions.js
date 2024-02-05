@@ -82,3 +82,4 @@ function displayInvention() {
         <p>${item.description}</p>
     ` 
 }
+
