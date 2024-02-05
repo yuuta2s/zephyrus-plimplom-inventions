@@ -50,7 +50,7 @@ function displayInventionDetailsCard(htmlTarget, invention) {
 function displayAllInventions() {
     // Get target element from the DOM to display the inventions
     // Clear the list
-    // Create and Display Card for 3 inventions
+    // Create and Display Card 
 }
 
 /*
