@@ -49,8 +49,17 @@ function displayInventionDetailsCard(htmlTarget, invention) {
 */
 function displayAllInventions() {
     // Get target element from the DOM to display the inventions
+    const htmlTarget = document.getElementById('inventions_list');
     // Clear the list
+<<<<<<< HEAD
     // Create and Display Card 
+=======
+    htmlTarget.innerHTML = '';
+    // Create and Display Card for all inventions
+    for (let i = 0; i < inventions.length; i++) {
+        displayInventionDetailsCard(htmlTarget, inventions[i]);
+    }
+>>>>>>> c79688b51c65a4cd52a6478806566a41fd0f3dde
 }
 
 /*
@@ -64,6 +73,17 @@ function displayInvention() {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
     // Get the target element from the DOM
+    const htmlTitleTarget = document.getElementById("invention_title")
+    const htmlTarget = document.getElementById("invention_details");
     // Get the invention object from the array "inventions" using the id
+    let item = inventions.find(item => item.id == id);
+    console.log(item)
     // Display the details of the invention in the target element
+    htmlTitleTarget.innerHTML = item.name
+    htmlTarget.innerHTML += ` 
+        <img src="/assets/images/inventions/${item.image}" alt="${item.name}">
+        <p>Inventé par ${item.inventor} en ${item.year}</p>
+        <p>${item.description}</p>
+    ` 
 }
+
