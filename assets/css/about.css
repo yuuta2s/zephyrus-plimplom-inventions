@@ -3,14 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    
+
+  
 }
 
 #apropos p {
     width: 80%;
     text-align: center;
     margin: 20px 0;
+    
 }
 
 .about {
-    width: 30%;
+    width: 100%;
+    
 }
